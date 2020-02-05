@@ -8,9 +8,9 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <xc.h>
-/*
- * 
- */
+
+int CONT_BIN;
+
 
 void setup (void){
     PORTA=0;
@@ -19,10 +19,20 @@ void setup (void){
     PORTD=0;
     ANSEL=0;
     ANSELH=0;
+    
+    TRISA = 0x01;
+    TRISB = 0x03;
+    TRISC=0;
+    TRISD=0;
 }
 
-int main(int argc, char** argv) {
-
-    return (EXIT_SUCCESS);
+void main (void){
+    setup();
+    CONT_BIN = 0;
+    while (1){
+        if
+    
+    }
+           
 }
 
