@@ -8,10 +8,15 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <xc.h>
+#include <ADC.h>
 
 int CONT_BIN;
 int AR1;
 int AR2;
+int ADC_VAL;
+void setup(void);
+void ADC(void);
+void int_con(void);
 
 void setup (void){
     PORTA=0;
@@ -61,6 +66,12 @@ void main (void){
             CONT_BIN--;
             PORTD = CONT_BIN;
             AR2=0;
+        }
+        if (ADRESH <= CONT_BIN){
+            PORTAbits.RA0 =1;
+        }
+        if (CONT_BIN <= ADRESH){
+            PORTAbits.RA0 =0;
         }
             
     
