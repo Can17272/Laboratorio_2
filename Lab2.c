@@ -9,6 +9,7 @@
 #include <stdlib.h>
 #include <xc.h>
 #include <ADC.h>
+#include "ADC0.h"
 
 int CONT_BIN;
 int AR1;
