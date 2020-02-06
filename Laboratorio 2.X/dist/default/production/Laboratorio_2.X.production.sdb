@@ -11,15 +11,81 @@
 [v ___eecpymem __eecpymem `(v  1 e 1 0 ]
 "39
 [v ___memcpyee __memcpyee `(v  1 e 1 0 ]
-"14 C:\Users\TOSHIBA\Documents\UVG\7mo Semestre\Digital 2\Laboratorio 2.X\Lab2.c
-[v _main main `(i  1 e 2 0 ]
-[s S29 . 1 `uc 1 ADON 1 0 :1:0 
+"22 C:\Users\TOSHIBA\Documents\UVG\7mo Semestre\Digital 2\New folder\Laboratorio_2\Laboratorio 2.X\Lab22.c
+[v _setup setup `(v  1 e 1 0 ]
+"36
+[v _ISR ISR `II(v  1 e 1 0 ]
+"52
+[v _main main `(v  1 e 1 0 ]
+"166 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f887.h
+[v _PORTA PORTA `VEuc  1 e 1 @5 ]
+[s S167 . 1 `uc 1 RA0 1 0 :1:0 
+`uc 1 RA1 1 0 :1:1 
+`uc 1 RA2 1 0 :1:2 
+`uc 1 RA3 1 0 :1:3 
+`uc 1 RA4 1 0 :1:4 
+`uc 1 RA5 1 0 :1:5 
+`uc 1 RA6 1 0 :1:6 
+`uc 1 RA7 1 0 :1:7 
+]
+"183
+[u S176 . 1 `S167 1 . 1 0 ]
+[v _PORTAbits PORTAbits `VES176  1 e 1 @5 ]
+"228
+[v _PORTB PORTB `VEuc  1 e 1 @6 ]
+[s S145 . 1 `uc 1 RB0 1 0 :1:0 
+`uc 1 RB1 1 0 :1:1 
+`uc 1 RB2 1 0 :1:2 
+`uc 1 RB3 1 0 :1:3 
+`uc 1 RB4 1 0 :1:4 
+`uc 1 RB5 1 0 :1:5 
+`uc 1 RB6 1 0 :1:6 
+`uc 1 RB7 1 0 :1:7 
+]
+"245
+[u S154 . 1 `S145 1 . 1 0 ]
+[v _PORTBbits PORTBbits `VES154  1 e 1 @6 ]
+"290
+[v _PORTC PORTC `VEuc  1 e 1 @7 ]
+"352
+[v _PORTD PORTD `VEuc  1 e 1 @8 ]
+[s S113 . 1 `uc 1 RBIF 1 0 :1:0 
+`uc 1 INTF 1 0 :1:1 
+`uc 1 T0IF 1 0 :1:2 
+`uc 1 RBIE 1 0 :1:3 
+`uc 1 INTE 1 0 :1:4 
+`uc 1 T0IE 1 0 :1:5 
+`uc 1 PEIE 1 0 :1:6 
+`uc 1 GIE 1 0 :1:7 
+]
+"482
+[s S122 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 TMR0IF 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 TMR0IE 1 0 :1:5 
+]
+[u S127 . 1 `S113 1 . 1 0 `S122 1 . 1 0 ]
+[v _INTCONbits INTCONbits `VES127  1 e 1 @11 ]
+[s S94 . 1 `uc 1 TMR1IF 1 0 :1:0 
+`uc 1 TMR2IF 1 0 :1:1 
+`uc 1 CCP1IF 1 0 :1:2 
+`uc 1 SSPIF 1 0 :1:3 
+`uc 1 TXIF 1 0 :1:4 
+`uc 1 RCIF 1 0 :1:5 
+`uc 1 ADIF 1 0 :1:6 
+]
+"553
+[u S102 . 1 `S94 1 . 1 0 ]
+[v _PIR1bits PIR1bits `VES102  1 e 1 @12 ]
+"1238
+[v _ADRESH ADRESH `VEuc  1 e 1 @30 ]
+[s S22 . 1 `uc 1 ADON 1 0 :1:0 
 `uc 1 GO_nDONE 1 0 :1:1 
 `uc 1 CHS 1 0 :4:2 
 `uc 1 ADCS 1 0 :2:6 
 ]
-"1276 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f887.h
-[s S34 . 1 `uc 1 . 1 0 :1:0 
+"1276
+[s S27 . 1 `uc 1 . 1 0 :1:0 
 `uc 1 GO 1 0 :1:1 
 `uc 1 CHS0 1 0 :1:2 
 `uc 1 CHS1 1 0 :1:3 
@@ -28,16 +94,44 @@
 `uc 1 ADCS0 1 0 :1:6 
 `uc 1 ADCS1 1 0 :1:7 
 ]
-[s S43 . 1 `uc 1 . 1 0 :1:0 
+[s S36 . 1 `uc 1 . 1 0 :1:0 
 `uc 1 nDONE 1 0 :1:1 
 ]
-[s S46 . 1 `uc 1 . 1 0 :1:0 
+[s S39 . 1 `uc 1 . 1 0 :1:0 
 `uc 1 GO_DONE 1 0 :1:1 
 ]
-[u S49 . 1 `S29 1 . 1 0 `S34 1 . 1 0 `S43 1 . 1 0 `S46 1 . 1 0 ]
-[v _ADCON0bits ADCON0bits `VES49  1 e 1 @31 ]
-"14 C:\Users\TOSHIBA\Documents\UVG\7mo Semestre\Digital 2\Laboratorio 2.X\Lab2.c
-[v _main main `(i  1 e 2 0 ]
+[u S42 . 1 `S22 1 . 1 0 `S27 1 . 1 0 `S36 1 . 1 0 `S39 1 . 1 0 ]
+[v _ADCON0bits ADCON0bits `VES42  1 e 1 @31 ]
+"1416
+[v _TRISA TRISA `VEuc  1 e 1 @133 ]
+"1478
+[v _TRISB TRISB `VEuc  1 e 1 @134 ]
+"1540
+[v _TRISC TRISC `VEuc  1 e 1 @135 ]
+"1602
+[v _TRISD TRISD `VEuc  1 e 1 @136 ]
+"3387
+[v _ANSEL ANSEL `VEuc  1 e 1 @392 ]
+"3449
+[v _ANSELH ANSELH `VEuc  1 e 1 @393 ]
+"14 C:\Users\TOSHIBA\Documents\UVG\7mo Semestre\Digital 2\New folder\Laboratorio_2\Laboratorio 2.X\Lab22.c
+[v _CONT_BIN CONT_BIN `i  1 e 2 0 ]
+"15
+[v _AR1 AR1 `i  1 e 2 0 ]
+"16
+[v _AR2 AR2 `i  1 e 2 0 ]
+"52
+[v _main main `(v  1 e 1 0 ]
 {
-"17
+"81
+} 0
+"22
+[v _setup setup `(v  1 e 1 0 ]
+{
+"34
+} 0
+"36
+[v _ISR ISR `II(v  1 e 1 0 ]
+{
+"50
 } 0

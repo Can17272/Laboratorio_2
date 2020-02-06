@@ -57,17 +57,17 @@ OBJECTDIR=build/${CND_CONF}/${IMAGE_TYPE}
 DISTDIR=dist/${CND_CONF}/${IMAGE_TYPE}
 
 # Source Files Quoted if spaced
-SOURCEFILES_QUOTED_IF_SPACED=Lab2.c ADC.c 7_DISPLAY.c
+SOURCEFILES_QUOTED_IF_SPACED=ADC.c 7_DISPLAY.c Lab22.c
 
 # Object Files Quoted if spaced
-OBJECTFILES_QUOTED_IF_SPACED=${OBJECTDIR}/Lab2.p1 ${OBJECTDIR}/ADC.p1 ${OBJECTDIR}/7_DISPLAY.p1
-POSSIBLE_DEPFILES=${OBJECTDIR}/Lab2.p1.d ${OBJECTDIR}/ADC.p1.d ${OBJECTDIR}/7_DISPLAY.p1.d
+OBJECTFILES_QUOTED_IF_SPACED=${OBJECTDIR}/ADC.p1 ${OBJECTDIR}/7_DISPLAY.p1 ${OBJECTDIR}/Lab22.p1
+POSSIBLE_DEPFILES=${OBJECTDIR}/ADC.p1.d ${OBJECTDIR}/7_DISPLAY.p1.d ${OBJECTDIR}/Lab22.p1.d
 
 # Object Files
-OBJECTFILES=${OBJECTDIR}/Lab2.p1 ${OBJECTDIR}/ADC.p1 ${OBJECTDIR}/7_DISPLAY.p1
+OBJECTFILES=${OBJECTDIR}/ADC.p1 ${OBJECTDIR}/7_DISPLAY.p1 ${OBJECTDIR}/Lab22.p1
 
 # Source Files
-SOURCEFILES=Lab2.c ADC.c 7_DISPLAY.c
+SOURCEFILES=ADC.c 7_DISPLAY.c Lab22.c
 
 
 
@@ -94,14 +94,6 @@ MP_PROCESSOR_OPTION=16F887
 # ------------------------------------------------------------------------------------
 # Rules for buildStep: compile
 ifeq ($(TYPE_IMAGE), DEBUG_RUN)
-${OBJECTDIR}/Lab2.p1: Lab2.c  nbproject/Makefile-${CND_CONF}.mk
-	@${MKDIR} "${OBJECTDIR}" 
-	@${RM} ${OBJECTDIR}/Lab2.p1.d 
-	@${RM} ${OBJECTDIR}/Lab2.p1 
-	${MP_CC} $(MP_EXTRA_CC_PRE) -mcpu=$(MP_PROCESSOR_OPTION) -c  -D__DEBUG=1    -fno-short-double -fno-short-float -O0 -fasmfile -maddrqual=ignore -xassembler-with-cpp -mwarn=-3 -Wa,-a -DXPRJ_default=$(CND_CONF)  -msummary=-psect,-class,+mem,-hex,-file  -ginhx032 -Wl,--data-init -mno-keep-startup -mno-osccal -mno-resetbits -mno-save-resetbits -mno-download -mno-stackcall $(COMPARISON_BUILD)  -std=c99 -gdwarf-3 -mstack=compiled:auto:auto     -o ${OBJECTDIR}/Lab2.p1 Lab2.c 
-	@-${MV} ${OBJECTDIR}/Lab2.d ${OBJECTDIR}/Lab2.p1.d 
-	@${FIXDEPS} ${OBJECTDIR}/Lab2.p1.d $(SILENT) -rsi ${MP_CC_DIR}../  
-	
 ${OBJECTDIR}/ADC.p1: ADC.c  nbproject/Makefile-${CND_CONF}.mk
 	@${MKDIR} "${OBJECTDIR}" 
 	@${RM} ${OBJECTDIR}/ADC.p1.d 
@@ -118,15 +110,15 @@ ${OBJECTDIR}/7_DISPLAY.p1: 7_DISPLAY.c  nbproject/Makefile-${CND_CONF}.mk
 	@-${MV} ${OBJECTDIR}/7_DISPLAY.d ${OBJECTDIR}/7_DISPLAY.p1.d 
 	@${FIXDEPS} ${OBJECTDIR}/7_DISPLAY.p1.d $(SILENT) -rsi ${MP_CC_DIR}../  
 	
-else
-${OBJECTDIR}/Lab2.p1: Lab2.c  nbproject/Makefile-${CND_CONF}.mk
+${OBJECTDIR}/Lab22.p1: Lab22.c  nbproject/Makefile-${CND_CONF}.mk
 	@${MKDIR} "${OBJECTDIR}" 
-	@${RM} ${OBJECTDIR}/Lab2.p1.d 
-	@${RM} ${OBJECTDIR}/Lab2.p1 
-	${MP_CC} $(MP_EXTRA_CC_PRE) -mcpu=$(MP_PROCESSOR_OPTION) -c    -fno-short-double -fno-short-float -O0 -fasmfile -maddrqual=ignore -xassembler-with-cpp -mwarn=-3 -Wa,-a -DXPRJ_default=$(CND_CONF)  -msummary=-psect,-class,+mem,-hex,-file  -ginhx032 -Wl,--data-init -mno-keep-startup -mno-osccal -mno-resetbits -mno-save-resetbits -mno-download -mno-stackcall $(COMPARISON_BUILD)  -std=c99 -gdwarf-3 -mstack=compiled:auto:auto     -o ${OBJECTDIR}/Lab2.p1 Lab2.c 
-	@-${MV} ${OBJECTDIR}/Lab2.d ${OBJECTDIR}/Lab2.p1.d 
-	@${FIXDEPS} ${OBJECTDIR}/Lab2.p1.d $(SILENT) -rsi ${MP_CC_DIR}../  
+	@${RM} ${OBJECTDIR}/Lab22.p1.d 
+	@${RM} ${OBJECTDIR}/Lab22.p1 
+	${MP_CC} $(MP_EXTRA_CC_PRE) -mcpu=$(MP_PROCESSOR_OPTION) -c  -D__DEBUG=1    -fno-short-double -fno-short-float -O0 -fasmfile -maddrqual=ignore -xassembler-with-cpp -mwarn=-3 -Wa,-a -DXPRJ_default=$(CND_CONF)  -msummary=-psect,-class,+mem,-hex,-file  -ginhx032 -Wl,--data-init -mno-keep-startup -mno-osccal -mno-resetbits -mno-save-resetbits -mno-download -mno-stackcall $(COMPARISON_BUILD)  -std=c99 -gdwarf-3 -mstack=compiled:auto:auto     -o ${OBJECTDIR}/Lab22.p1 Lab22.c 
+	@-${MV} ${OBJECTDIR}/Lab22.d ${OBJECTDIR}/Lab22.p1.d 
+	@${FIXDEPS} ${OBJECTDIR}/Lab22.p1.d $(SILENT) -rsi ${MP_CC_DIR}../  
 	
+else
 ${OBJECTDIR}/ADC.p1: ADC.c  nbproject/Makefile-${CND_CONF}.mk
 	@${MKDIR} "${OBJECTDIR}" 
 	@${RM} ${OBJECTDIR}/ADC.p1.d 
@@ -142,6 +134,14 @@ ${OBJECTDIR}/7_DISPLAY.p1: 7_DISPLAY.c  nbproject/Makefile-${CND_CONF}.mk
 	${MP_CC} $(MP_EXTRA_CC_PRE) -mcpu=$(MP_PROCESSOR_OPTION) -c    -fno-short-double -fno-short-float -O0 -fasmfile -maddrqual=ignore -xassembler-with-cpp -mwarn=-3 -Wa,-a -DXPRJ_default=$(CND_CONF)  -msummary=-psect,-class,+mem,-hex,-file  -ginhx032 -Wl,--data-init -mno-keep-startup -mno-osccal -mno-resetbits -mno-save-resetbits -mno-download -mno-stackcall $(COMPARISON_BUILD)  -std=c99 -gdwarf-3 -mstack=compiled:auto:auto     -o ${OBJECTDIR}/7_DISPLAY.p1 7_DISPLAY.c 
 	@-${MV} ${OBJECTDIR}/7_DISPLAY.d ${OBJECTDIR}/7_DISPLAY.p1.d 
 	@${FIXDEPS} ${OBJECTDIR}/7_DISPLAY.p1.d $(SILENT) -rsi ${MP_CC_DIR}../  
+	
+${OBJECTDIR}/Lab22.p1: Lab22.c  nbproject/Makefile-${CND_CONF}.mk
+	@${MKDIR} "${OBJECTDIR}" 
+	@${RM} ${OBJECTDIR}/Lab22.p1.d 
+	@${RM} ${OBJECTDIR}/Lab22.p1 
+	${MP_CC} $(MP_EXTRA_CC_PRE) -mcpu=$(MP_PROCESSOR_OPTION) -c    -fno-short-double -fno-short-float -O0 -fasmfile -maddrqual=ignore -xassembler-with-cpp -mwarn=-3 -Wa,-a -DXPRJ_default=$(CND_CONF)  -msummary=-psect,-class,+mem,-hex,-file  -ginhx032 -Wl,--data-init -mno-keep-startup -mno-osccal -mno-resetbits -mno-save-resetbits -mno-download -mno-stackcall $(COMPARISON_BUILD)  -std=c99 -gdwarf-3 -mstack=compiled:auto:auto     -o ${OBJECTDIR}/Lab22.p1 Lab22.c 
+	@-${MV} ${OBJECTDIR}/Lab22.d ${OBJECTDIR}/Lab22.p1.d 
+	@${FIXDEPS} ${OBJECTDIR}/Lab22.p1.d $(SILENT) -rsi ${MP_CC_DIR}../  
 	
 endif
 
