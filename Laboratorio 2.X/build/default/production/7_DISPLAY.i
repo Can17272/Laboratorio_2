@@ -2499,4 +2499,20 @@ extern __bank0 __bit __timeout;
 # 4 "7_DISPLAY.c" 2
 
 
-int segmentos[16]={0x3F,0x06,0x5B,0x4F,0x66,0x6D,0x7D,0x07,0x7F,0x6F,0x77,0x7C,0x39,0x5E,0x79,0x71};
+
+
+void Timer0 (void){
+OPTION_REGbits.T0CS=0;
+OPTION_REGbits.PSA=0;
+OPTION_REGbits.PS2 = 1;
+INTCONbits.GIE=1;
+INTCONbits.TMR0IE=1;
+INTCONbits.TMR0IF=0;
+INTCONbits.INTE=0;
+INTCONbits.PEIE=1;
+INTCONbits.RBIF=0;
+INTCONbits.PEIE=1;
+IOCB=0b00000011;
+
+TMR0 = 255;
+}

@@ -3,5 +3,20 @@
 #include <xc.h>
 #include "7_DISPLAY.h"
 
-int segmentos[16]={0x3F,0x06,0x5B,0x4F,0x66,0x6D,0x7D,0x07,0x7F,0x6F,0x77,0x7C,0x39,0x5E,0x79,0x71};    //Config 7 segmentos
+    //Config 7 segmentos
 
+void Timer0 (void){    
+OPTION_REGbits.T0CS=0;//El timer0 actuara como temporizador
+OPTION_REGbits.PSA=0;//El prescaler se le asigna al timer0
+OPTION_REGbits.PS2 = 1;//con estos 3 bits a 1
+INTCONbits.GIE=1;//habilita las interrupciones
+INTCONbits.TMR0IE=1;//habilita el uso de la interrupción tmr0 PIC 
+INTCONbits.TMR0IF=0;//a 0 para que detecte la interrupción tmr0 PIC
+INTCONbits.INTE=0;   
+INTCONbits.PEIE=1;
+INTCONbits.RBIF=0;
+INTCONbits.PEIE=1;
+IOCB=0b00000011;//por desborde
+//    INTCONbits.RBIF=1;
+TMR0 = 255;//se inicializa a este valor para obtener Xms de temporización
+}

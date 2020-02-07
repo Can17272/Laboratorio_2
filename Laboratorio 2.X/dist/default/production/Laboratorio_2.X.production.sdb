@@ -3,6 +3,8 @@
 [d edition pro ]
 [d chip 16F887 ]
 [d frameptr 0 ]
+"4 C:\Users\TOSHIBA\Documents\UVG\7mo Semestre\Digital 2\New folder\Laboratorio_2\Laboratorio 2.X\ADC.c
+[v _ADC ADC `(v  1 e 1 0 ]
 "10 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\sprcadd.c
 [v ___fladd __fladd `(d  1 e 4 0 ]
 "4 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\Umul8_16.c
@@ -11,15 +13,17 @@
 [v ___eecpymem __eecpymem `(v  1 e 1 0 ]
 "39
 [v ___memcpyee __memcpyee `(v  1 e 1 0 ]
-"22 C:\Users\TOSHIBA\Documents\UVG\7mo Semestre\Digital 2\New folder\Laboratorio_2\Laboratorio 2.X\Lab22.c
+"26 C:\Users\TOSHIBA\Documents\UVG\7mo Semestre\Digital 2\New folder\Laboratorio_2\Laboratorio 2.X\Lab22.c
 [v _setup setup `(v  1 e 1 0 ]
-"36
+"40
 [v _ISR ISR `II(v  1 e 1 0 ]
-"52
+"61
 [v _main main `(v  1 e 1 0 ]
-"166 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f887.h
+"59 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f887.h
+[v _TMR0 TMR0 `VEuc  1 e 1 @1 ]
+"166
 [v _PORTA PORTA `VEuc  1 e 1 @5 ]
-[s S167 . 1 `uc 1 RA0 1 0 :1:0 
+[s S236 . 1 `uc 1 RA0 1 0 :1:0 
 `uc 1 RA1 1 0 :1:1 
 `uc 1 RA2 1 0 :1:2 
 `uc 1 RA3 1 0 :1:3 
@@ -29,11 +33,11 @@
 `uc 1 RA7 1 0 :1:7 
 ]
 "183
-[u S176 . 1 `S167 1 . 1 0 ]
-[v _PORTAbits PORTAbits `VES176  1 e 1 @5 ]
+[u S245 . 1 `S236 1 . 1 0 ]
+[v _PORTAbits PORTAbits `VES245  1 e 1 @5 ]
 "228
 [v _PORTB PORTB `VEuc  1 e 1 @6 ]
-[s S145 . 1 `uc 1 RB0 1 0 :1:0 
+[s S212 . 1 `uc 1 RB0 1 0 :1:0 
 `uc 1 RB1 1 0 :1:1 
 `uc 1 RB2 1 0 :1:2 
 `uc 1 RB3 1 0 :1:3 
@@ -43,13 +47,13 @@
 `uc 1 RB7 1 0 :1:7 
 ]
 "245
-[u S154 . 1 `S145 1 . 1 0 ]
-[v _PORTBbits PORTBbits `VES154  1 e 1 @6 ]
+[u S221 . 1 `S212 1 . 1 0 ]
+[v _PORTBbits PORTBbits `VES221  1 e 1 @6 ]
 "290
 [v _PORTC PORTC `VEuc  1 e 1 @7 ]
 "352
 [v _PORTD PORTD `VEuc  1 e 1 @8 ]
-[s S113 . 1 `uc 1 RBIF 1 0 :1:0 
+[s S109 . 1 `uc 1 RBIF 1 0 :1:0 
 `uc 1 INTF 1 0 :1:1 
 `uc 1 T0IF 1 0 :1:2 
 `uc 1 RBIE 1 0 :1:3 
@@ -59,14 +63,14 @@
 `uc 1 GIE 1 0 :1:7 
 ]
 "482
-[s S122 . 1 `uc 1 . 1 0 :2:0 
+[s S118 . 1 `uc 1 . 1 0 :2:0 
 `uc 1 TMR0IF 1 0 :1:2 
 `uc 1 . 1 0 :2:3 
 `uc 1 TMR0IE 1 0 :1:5 
 ]
-[u S127 . 1 `S113 1 . 1 0 `S122 1 . 1 0 ]
-[v _INTCONbits INTCONbits `VES127  1 e 1 @11 ]
-[s S94 . 1 `uc 1 TMR1IF 1 0 :1:0 
+[u S123 . 1 `S109 1 . 1 0 `S118 1 . 1 0 ]
+[v _INTCONbits INTCONbits `VES123  1 e 1 @11 ]
+[s S175 . 1 `uc 1 TMR1IF 1 0 :1:0 
 `uc 1 TMR2IF 1 0 :1:1 
 `uc 1 CCP1IF 1 0 :1:2 
 `uc 1 SSPIF 1 0 :1:3 
@@ -75,8 +79,8 @@
 `uc 1 ADIF 1 0 :1:6 
 ]
 "553
-[u S102 . 1 `S94 1 . 1 0 ]
-[v _PIR1bits PIR1bits `VES102  1 e 1 @12 ]
+[u S183 . 1 `S175 1 . 1 0 ]
+[v _PIR1bits PIR1bits `VES183  1 e 1 @12 ]
 "1238
 [v _ADRESH ADRESH `VEuc  1 e 1 @30 ]
 [s S22 . 1 `uc 1 ADON 1 0 :1:0 
@@ -102,6 +106,20 @@
 ]
 [u S42 . 1 `S22 1 . 1 0 `S27 1 . 1 0 `S36 1 . 1 0 `S39 1 . 1 0 ]
 [v _ADCON0bits ADCON0bits `VES42  1 e 1 @31 ]
+[s S83 . 1 `uc 1 PS 1 0 :3:0 
+`uc 1 PSA 1 0 :1:3 
+`uc 1 T0SE 1 0 :1:4 
+`uc 1 T0CS 1 0 :1:5 
+`uc 1 INTEDG 1 0 :1:6 
+`uc 1 nRBPU 1 0 :1:7 
+]
+"1366
+[s S90 . 1 `uc 1 PS0 1 0 :1:0 
+`uc 1 PS1 1 0 :1:1 
+`uc 1 PS2 1 0 :1:2 
+]
+[u S94 . 1 `S83 1 . 1 0 `S90 1 . 1 0 ]
+[v _OPTION_REGbits OPTION_REGbits `VES94  1 e 1 @129 ]
 "1416
 [v _TRISA TRISA `VEuc  1 e 1 @133 ]
 "1478
@@ -110,6 +128,8 @@
 [v _TRISC TRISC `VEuc  1 e 1 @135 ]
 "1602
 [v _TRISD TRISD `VEuc  1 e 1 @136 ]
+"2416
+[v _IOCB IOCB `VEuc  1 e 1 @150 ]
 "3387
 [v _ANSEL ANSEL `VEuc  1 e 1 @392 ]
 "3449
@@ -120,18 +140,34 @@
 [v _AR1 AR1 `i  1 e 2 0 ]
 "16
 [v _AR2 AR2 `i  1 e 2 0 ]
-"52
+"17
+[v _cont1 cont1 `i  1 e 2 0 ]
+"18
+[v _cont2 cont2 `i  1 e 2 0 ]
+"19
+[v _ADC_VAL1 ADC_VAL1 `i  1 e 2 0 ]
+"20
+[v _ADC_VAL2 ADC_VAL2 `i  1 e 2 0 ]
+"21
+[v _segmentos segmentos `[16]i  1 e 32 0 ]
+"61
 [v _main main `(v  1 e 1 0 ]
 {
-"81
+"109
 } 0
-"22
+"26
 [v _setup setup `(v  1 e 1 0 ]
 {
-"34
+"38
 } 0
-"36
+"4 C:\Users\TOSHIBA\Documents\UVG\7mo Semestre\Digital 2\New folder\Laboratorio_2\Laboratorio 2.X\ADC.c
+[v _ADC ADC `(v  1 e 1 0 ]
+{
+[v ADC@ADC_VALUE ADC_VALUE `i  1 p 2 2 ]
+"16
+} 0
+"40 C:\Users\TOSHIBA\Documents\UVG\7mo Semestre\Digital 2\New folder\Laboratorio_2\Laboratorio 2.X\Lab22.c
 [v _ISR ISR `II(v  1 e 1 0 ]
 {
-"50
+"59
 } 0
